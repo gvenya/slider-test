@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glaccy</title>
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/libraries/picturefill.js" async></script>
+    <!--<link rel="preload" href="fonts/roboto.woff" as="font" type="font/woff2" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body class="page" style="background-color: rgb(132, 157, 143);"><!-- page--mint-->
+    <svg style="display: none;">
+      <symbol viewBox="0 0 154 64" id="header-logo">
+        <g fill="#fff">
+          <path d="M59.292 42.755c-.833-.25-2.153.373-2.153.373s-3.027 2.513-17.84-.378c-10.908-2.129-16.583-1.917-16.583-1.917s1.833-12.5 1.333-16c0 0 0-.917-1.083-.917s-1.75.417-1.75 1 .167 4.417-.25 7.083c0 0-1.417 4.251-6.167 3.917s-5.75-3.75-6.167-6.083-.666-8.833.584-11.5c0 0 7.167.25 11.667-3.583s4.25-7.167 2.083-8.583S15.883 5 12.049 8.5s-5.083 7-5.083 7-5.625-1.208-4.333-7.083C3.982 2.277 12.393 3 12.393 3c1.75.333 1.823.5 2.406-.083s1-2.083-1.75-2.167S2.049 2.021.466 7.5c-1.685 5.828 1.435 9.997 5.622 10.643 0 0-2.288 10.107.545 15.107s6.94 4.917 8.595 4.917 4.572-.916 5.405-2.25c0 0-.393 3.581-.724 4.88 0 0-6.935-.095-9.109 1.036-3.688 1.917-2.917 6.48-1.5 8.104 1.204 1.38 4.812 2.125 7.417.896 2.705-1.277 4.865-3.739 5.549-7.697 0 0 6.368-.469 12.534 1.364s14.756 3.556 17.34 3.556 8.046-.738 8.327-2.889c.186-1.438-.342-2.162-1.175-2.412zM15.862 9.328s3.281-2.5 4.844-.938c0 0 1.25 1.281.094 2.812-.656.869-2.396 3.589-10.656 4.938-.001.001 2.593-4.562 5.718-6.812zm.265 38.906s-4.531 2.469-5.047-.875c-.333-2.158.89-3.18 1.687-3.57s1.875-.879 6.579-.711c0 0 0 3.328-3.219 5.156z"/>
+          <path d="M73.576 24.477l-.002 6.77c-.007.038-.019.075-.021.115-.035.931-.418 1.734-.861 2.537a5.56 5.56 0 0 1-1.18 1.463c-.533.469-.877-.564-1.078-.985-1.391-2.915-.726-6.812-.187-9.862.257-1.454-2.706-1.077-2.936.222-.334 1.888-.869 5.118-.547 7.906-.587.101-1.167.366-1.341.737-.511 1.088-2.009 4.704-3.833 3.258-1.319-1.046-1.461-3.743-1.6-5.268-.191-2.111.154-4.267.816-6.266-.058.173 1.14-2.823 1.67-1.703.326.69.032 2.641-.608 3.122-1.571 1.182.875 1.67 1.824.956 1.802-1.356 3.05-5.708-.074-6.232-3.464-.581-5.438 2.923-6.163 5.697-.335 1.279-.563 3.074-.504 4.886-.481.832-2.097 3.533-3.047 4.026-1.125.584-1.104-.229-1.062-.75s.542-5.146.813-8.271c.175-2.014-.062-2.771-.5-3.646s-3.994-2.825-7.146.833c-2.183 2.534-2.912 4.927-3.08 7.054-.213.425-.443.873-.71 1.362-1.5 2.75-3.384 3.909-4.062 2-.594-1.672-.906-3.703-.75-6.188.005-.088 3.5-5 5.062-11.75s1.25-10.062.438-10.625-4.25-1.938-6.312 6.25c-1.523 6.047-2.137 12.5-1.565 17.879a41.603 41.603 0 0 1-1.229 2.434c-1.5 2.75-3.384 3.909-4.062 2-.594-1.672-.906-3.703-.75-6.188.005-.088 3.5-5 5.062-11.75s1.25-10.062.438-10.625-4.25-1.938-6.312 6.25-2.465 17.126-.5 23.125c0 0 1.081 3.375 3.103 3.125 1.671-.207 3.656-1.846 4.829-4.906.144.615.301 1.215.487 1.781 0 0 1.081 3.375 3.103 3.125 1.376-.17 2.964-1.32 4.14-3.423.711 1.839 2.239 3.34 4.213 2.985 2.667-.479 3.218-1.932 3.218-1.932s-.051 2.383 1.657 2.383c1.525 0 2.729-.889 3.938-3.159.409-.77.642-1.218.773-1.481.356 2.144 1.241 4.055 3.018 4.83 2.976 1.298 5.62-1.172 7.167-3.608.473 1.199 1.24 2.156 2.461 2.616 1.338.505 2.659.013 3.772-.928-.005 1.173-.016 2.346-.026 3.519-.584.001-1.239.143-1.547.415-3.203 2.825-4.598 6.241-4.195 10.521.233 2.48 2.576 3.597 4.725 2.662 3.101-1.35 3.57-6.021 3.83-8.836.625-6.829.139-13.939.139-20.791 0-1.293-2.906-.702-2.906.329zM30.252 13.281c.688-2.656 1.329-3.719 1.954-3.719s.938.719.469 3-1.987 8.626-4.094 12.75c0 0 .983-9.374 1.671-12.031zm8.418 0c.688-2.656 1.329-3.719 1.954-3.719s.938.719.469 3-1.987 8.626-4.094 12.75c0 0 .984-9.374 1.671-12.031zm12.859 12.427c-.074.58-.459 4.292-.959 6.292s-.953 2.78-2.583 3.438c-1.704.688-2.438-1.418-2.438-1.418-1.146-3.208.396-6.042 1.667-7.919s2.573-2.096 3.312-1.955a1.36 1.36 0 0 1 1.001 1.562zm21.972 18.056c-.038 2.683-.381 5.377-1.579 7.81-.701.146-1.029-.117-1.239-1.237a10.734 10.734 0 0 1 .049-3.251c.24-2.021 1.382-3.736 2.783-5.153-.007.61-.005 1.22-.014 1.831zM92.301 21.649c-2.541-1.229-4.811-3.29-5.715-6-1.279-3.827 2.928-6.647 6.275-6.474 3.488.181 5.137 3.625 4.967 6.709-.061 1.095-.748 3.557-2.096 2.277-.951-.906-1.369-2.375-1.566-3.632-.191-1.21-3.1-.495-2.898.776.578 3.657 4.527 7.689 7.898 3.863 3.014-3.418 1.656-9.462-2.574-11.233-4.523-1.893-10.135.077-12.529 4.327-2.732 4.85 2.748 9.598 6.629 11.321 6.225 3.338 6.455 14.054-1.818 14.126-3.43.03-6.619-2.438-7.693-5.609-.572-1.688-.279-7.553 2.014-8.003 1.807-.354 1.311-2.04-.453-1.693-3.713.727-5.08 5.515-4.721 8.858.576 5.341 5.578 8.339 10.631 8.295 4.682-.041 8.654-2.929 9.625-7.549.938-4.482-1.912-8.768-5.976-10.359z"/>
+          <path d="M110.881 37.532c-2.855-1.552-1.223-7.563-.791-9.875.279-1.492 1.555-3.794-.494-4.296-2.385-.584-5.223 1.687-7.277 3.858.012-2.506.17-4.999.553-7.478 3.088-1.576 5.4-3.821 7.182-7.395 1.295-2.604 1.941-7.971-2.461-6.422-3.986 1.403-5.377 6.017-6.619 9.688a29.258 29.258 0 0 0-1.094 4.378c-.398.16-.803.312-1.219.44-1.658.512-1.441 1.407.238.89.275-.085.543-.173.809-.263-.793 5.612-.256 11.49.248 17.02.049.54 2.969-.001 2.898-.777-.227-2.468-.414-4.922-.496-7.364.283-.104.52-.236.633-.387.889-1.175 1.982-2.203 3.08-3.177.299-.261.605-.513.92-.755l.459-.339c.674-.53.799-.543.381-.04-.061.916-.459 1.93-.625 2.832-.549 2.992-2.127 8.889 1.346 10.775.745.403 3.43-.715 2.329-1.313zm-6.486-24.101c.305-.897.715-1.77 1.094-2.636.473-1.082 1.73-4.768 2.645-3.004.729 1.404-.426 3.717-.938 5.067-.83 2.185-2.254 3.95-4.047 5.297.31-1.58.714-3.155 1.246-4.724z"/>
+          <path d="M121.635 30.527c.006-3.288-.375-7.506-4.303-7.863-4.309-.392-6.006 4.123-6.064 7.49-.004.274.135.456.35.569-.004 3.15.76 7.26 4.508 7.197 4.181-.068 5.505-3.714 5.509-7.393zm-4.998 5.475c-2.441-.971-2.219-5.203-2.053-7.24a.542.542 0 0 0-.246-.525c.301-2.017 1.082-5.03 2.863-3.506 1.416 1.211 1.445 4.148 1.521 5.835.053 1.144-.105 6.224-2.085 5.436zM153.135 48.58c-1.127-2.886-3.588-3.994-6.293-4.128a12.032 12.032 0 0 0-1.133-2.076c-3.91-5.788-13.189-5.019-19.475-1.948-.041-.913-.09-1.824-.129-2.73 2.533.127 5-.852 6.502-2.997 1.676-2.395 1.434-6.632.777-9.314-.619-2.525-3.088-2.072-4.93-1.234-.656.298-1.279.744-1.865 1.261.055-.672.111-1.345.16-2.014.111-1.542-2.842-1.153-2.941.203-.453 6.196-.297 12.366-.441 18.54-4.271 3.862-5.348 7.501-5.391 12.06-.02 2.271 1.934 3.961 3.982 2.386 2.895-2.224 3.771-6.629 4.172-9.984.178-1.491.197-3.009.16-4.528 4.49-2.941 10.635-3.149 15.205-.1.938.626 1.711 1.594 2.262 2.696-1.688.3-3.311.855-4.613 1.482-1.713.825-4.256 2.765-4.131 4.936.098 1.69 1.029 2.638 2.283 2.979.078.033.17.063.299.084 6.135.995 10.703-2.626 9.828-7.737 2.984 1.625 4.107 5.405 3.043 8.66-2.387 7.304-11.584 8.932-16.949 4.054-.574-.523-3.184.577-2.729.992 7.786 7.076 27.058.53 22.347-11.543zm-29.944-1.775c-.102 1.738-.459 3.549-1.145 5.143a22.06 22.06 0 0 1-.801 1.598s-.26.064-.316-.717c.025-2.858.809-5.577 2.346-7.892-.025.623-.048 1.245-.084 1.868zm3.129-17.858a.768.768 0 0 0 .146-.172c.516-.917 1.207-1.728 1.908-2.507.527-.586 1.119-1.138 1.803-1.539.324.162.654.991.777 2.131.303 2.772.439 10.096-3.945 9.407-.209-.033-.57.043-.947.171v-.039c-.06-2.478.075-4.967.258-7.452zm13.08 23.744c-.016-.003-.037-.001-.055-.003-1.689-.398-1.502-1.99-1.289-3.086.492-2.524 3.576-3.883 6.117-3.959 1.284 3.567.296 7.87-4.773 7.048z"/>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 17 17" id="icon-search">
+        <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+      </symbol>
+      <symbol viewBox="0 0 21 19" id="icon-login">
+        <g>
+          <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+          <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 21 20" id="icon-cart">
+        <!--fill="#FFF"--><g>
+          <!--<path class="user-list__el"  d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>-->
+          <path class="user-list__el" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+          <circle class="user-list__el" cx="6.984" cy="18" r="2"/>
+          <circle class="user-list__el" cx="15.984" cy="18" r="2"/>
+          <!--<polygon class="user-list__cart-inside" points="5.7,3.9 18.8,3.9 17.5,13.2 6.7,13.2  "/>-->
+         
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 21 20" id="icon-cart-inside">
+        <g fill="#000">
+          <path fill="#ff4a08" class="user-list__el"  d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
+          <path class="user-list__el" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+          <circle class="user-list__el" cx="6.984" cy="18" r="2"/>
+          <circle class="user-list__el" cx="15.984" cy="18" r="2"/>
+        </g>
+      </symbol>
+
+      <symbol viewBox="0 0 512 512" id="social-twitter">
+        <path fill="#FFFFFF" d="M256,0C114.6,0,0,114.6,0,256s114.6,256,256,256s256-114.6,256-256S397.4,0,256,0z M403.1,180.5
+	c0.1,3.3,0.2,6.5,0.2,9.8c0,100.3-76.4,216-216,216c-42.9,0-82.8-12.6-116.4-34.1c5.9,0.7,12,1.1,18.1,1.1
+	c35.6,0,68.3-12.1,94.3-32.5c-33.2-0.6-61.2-22.6-70.9-52.7c4.6,0.9,9.4,1.4,14.3,1.4c6.9,0,13.6-0.9,20-2.7
+	c-34.7-7-60.9-37.7-60.9-74.4c0-0.3,0-0.6,0-1c10.2,5.7,21.9,9.1,34.4,9.5c-20.4-13.6-33.8-36.8-33.8-63.2c0-13.9,3.7-27,10.3-38.2
+	c37.4,45.9,93.4,76.1,156.5,79.3c-1.3-5.6-2-11.4-2-17.3c0-41.9,34-75.9,75.9-75.9c21.8,0,41.6,9.2,55.4,24
+	c17.3-3.4,33.5-9.7,48.2-18.4c-5.7,17.7-17.7,32.6-33.4,42c15.4-1.8,30-5.9,43.6-12C430.8,156.5,418,169.8,403.1,180.5z"/>
+      </symbol>
+
+      <symbol viewBox="0 0 112.2 112.2" id="social-ig">
+        <g>
+          <path fill="#FFFFFF" d="M72,41.8h8.4c0.8,0,1.5-0.7,1.5-1.5v-8.5c0-0.9-0.7-1.5-1.5-1.5H72c-0.8,0-1.5,0.6-1.5,1.5v8.5
+            C70.5,41.1,71.2,41.8,72,41.8z"/>
+          <path fill="#FFFFFF" d="M56.1,0C25.1,0,0,25.1,0,56.1c0,31,25.1,56.1,56.1,56.1c31,0,56.1-25.1,56.1-56.1
+            C112.2,25.1,87.1,0,56.1,0z M89.7,79.1c0,5.9-4.8,10.6-10.6,10.6h-46c-5.9,0-10.6-4.8-10.6-10.6v-46c0-5.9,4.8-10.6,10.6-10.6h46
+            c5.9,0,10.6,4.7,10.6,10.6V79.1z"/>
+          <path fill="#FFFFFF" d="M56.1,67.9c6.5,0,11.8-5.3,11.8-11.8c0-2.1-0.5-4.1-1.5-5.8c-0.2-0.4-0.4-0.7-0.7-1.1
+            c-2.2-2.9-5.6-4.9-9.6-4.9s-7.4,1.9-9.6,4.9c-0.2,0.3-0.5,0.7-0.7,1.1c-1,1.7-1.5,3.7-1.5,5.8C44.3,62.6,49.6,67.9,56.1,67.9z"/>
+          <path fill="#FFFFFF" d="M73.8,51.1c0.5,1.6,0.7,3.3,0.7,5c0,10.2-8.3,18.4-18.4,18.4c-10.2,0-18.4-8.3-18.4-18.4
+            c0-1.7,0.2-3.4,0.7-5c0.2-0.7,0.5-1.3,0.7-1.9h-10v27.5c0,3.5,2.9,6.4,6.4,6.4h41.2c3.5,0,6.4-2.8,6.4-6.4c0,0,0-27.5,0-27.5h-10
+            C73.4,49.8,73.6,50.5,73.8,51.1z"/>
+        </g>
+      </symbol>
+
+      <symbol viewBox="0 0 60 60" id="social-fb">
+        <path fill="#FFFFFF" d="M25.8,46.3h6.7V30H37l0.6-5.6h-5.1l0-2.8c0-1.5,0.1-2.3,2.2-2.3h2.8v-5.6h-4.5c-5.4,0-7.3,2.7-7.3,7.3v3.4
+	h-3.4V30h3.4V46.3z M30,60C13.4,60,0,46.6,0,30S13.4,0,30,0s30,13.4,30,30S46.6,60,30,60z"/>
+      </symbol>
+
+      <symbol viewBox="0 0 980 980" id="social-B">
+        <g>
+          <path fill="#FFFFFF" d="M553,441c10.7-4.8,12.3-6.6,18-20c4.4-9.5,2-26.2,2-38c0-25.1-10-37.7-24-46c-14-8.3-23.2-14-51.9-14
+            l-40.1,2v122h52C528.7,447,542.3,445.8,553,441z"/>
+          <path fill="#FFFFFF" d="M567,541c-13.8-11.3-24.3-17-51.8-17l-54.2-1v144l56,2c53.4,0,70-16.9,70-66C587,577.9,580.8,552.3,567,541
+            z"/>
+          <path fill="#FFFFFF" d="M490,0C219.4,0,0,219.4,0,490s219.4,490,490,490s490-219.4,490-490S760.6,0,490,0z M661.2,678.4
+            c-11.2,22.3-26.2,38.8-45.2,49.4c-11.9,6.3-25.5,10.8-41,13.4c-15.4,2.6-33.4,3.9-54,3.9H401.9c-17.2,0-29.5-4.9-36.8-14.8
+            c-7.4-9.8-11-25.5-11-47V309.1c0-22,3.8-37.7,11.3-47.4c7.5-9.6,19.7-14.4,36.6-14.4h126.4c18.6,0,34.8,1.5,48.4,4.4
+            c13.7,2.9,25.9,8.6,36.7,17c9.2,7,17.4,15.9,24.5,26.7c7.1,10.8,12.5,22.6,16.2,35.7c3.7,13,5.6,26.8,5.6,41.3
+            c0,49.8-19.5,86.3-58.5,109.3c51.2,20.8,76.9,61.4,76.9,121.6C678,631,672.4,656.1,661.2,678.4z"/>
+        </g>
+      </symbol>
+
+      <symbol viewBox="0 0 108 37" id="htmla-logo"><!--fill="#FFFFFF"-->
+        <path class="st0" d="M103.7,29.2c-0.9,2.2-2.1,2.9-3.3,2.9c-0.4,0-0.7-0.1-1.1-0.1v-1.6c0.3,0.1,0.6,0.1,0.8,0.1
+	c0.9,0,1.6-0.6,2.1-1.9l0.2-0.4l-3.9-8.4h2l2.8,6.3l2.5-6.3h1.9L103.7,29.2z M95.7,22.9c0-1.1-0.6-1.7-1.6-1.7
+	c-0.9,0-1.6,0.6-2.1,1.1c0,0.2,0,0.4,0,0.6v5.2h-1.8V23c0-1.1-0.6-1.7-1.6-1.7s-1.8,0.7-2.2,1.3v5.6h-1.8v-8.3h1.6v1
+	c0.4-0.5,1.4-1.3,2.8-1.3c1.2,0,2.1,0.5,2.6,1.3c0.7-0.7,1.7-1.3,2.9-1.3c2.2,0,3.1,1.6,3.1,3.3v5.2h-1.8L95.7,22.9L95.7,22.9z
+	 M76.4,24.6c0.2,1.5,1.7,2.1,3.2,2.1c1,0,1.9-0.2,2.6-0.6v1.6c-0.8,0.4-1.8,0.6-3,0.6c-2.5,0-4.7-1.5-4.7-4.4c0-3,2.3-4.4,4.2-4.4
+	c3.3,0,4.4,2.7,3.9,5.1C82.6,24.6,76.4,24.6,76.4,24.6z M78.8,21.1c-1.2,0-2.4,0.7-2.4,2.1H81C81,22.5,80.6,21.1,78.8,21.1z
+	 M71,26.8c-0.6,0.8-1.6,1.5-3.2,1.5c-2.5,0-4.1-2-4.1-4.4s1.6-4.4,4.1-4.4c1.5,0,2.4,0.6,3,1.3V16h1.8v12.1H71V26.8z M70.8,22.9
+	c-0.4-0.9-1.3-1.7-2.6-1.7c-1.5,0-2.6,1.1-2.6,2.7s1.1,2.7,2.6,2.7c1.3,0,2.2-0.8,2.6-1.7V22.9z M70.8,1.4h1.8v12.1h-1.8V1.4z
+	 M66.3,8.4c0-1.1-0.6-1.7-1.6-1.7c-0.9,0-1.6,0.6-2.1,1.1c0,0.2,0,0.4,0,0.6v5.2h-1.8V8.4c0-1.1-0.6-1.7-1.6-1.7S57.4,7.4,57,8v5.6
+	h-1.8V5.2h1.6v1C57.2,5.8,58.1,5,59.5,5c1.2,0,2.1,0.5,2.6,1.3C62.8,5.6,63.8,5,65,5c2.2,0,3.1,1.6,3.1,3.3v5.2h-1.8
+	C66.3,13.5,66.3,8.4,66.3,8.4z M57.8,21.2c-1.2,0-2.2,0.3-3,0.6v-1.7c0.7-0.2,1.8-0.6,3.2-0.6c2.4,0,3.8,1.1,3.8,3.6v3
+	c0,0.5,0.3,0.6,0.6,0.6c0.2,0,0.4-0.1,0.6-0.1V28c-0.3,0.1-0.8,0.2-1.2,0.2c-0.8,0-1.4-0.3-1.7-1c-0.8,0.7-1.8,1.1-3.1,1.1
+	c-1.5,0-2.9-0.8-2.9-2.5c0-2.1,2-2.8,3.7-2.8c0.7,0,1.5,0.1,2.2,0.2v-0.3C60,21.9,59.2,21.2,57.8,21.2z M58.2,24.3
+	c-1.1,0-2.2,0.3-2.2,1.4c0,0.8,0.7,1.2,1.6,1.2c0.9,0,1.7-0.3,2.4-1v-1.4C59.5,24.4,58.8,24.3,58.2,24.3z M47.9,11V6.9h-1.5V5.2h1.5
+	V2.7l1.8-0.4v3h3v1.6h-3v3.8c0,1.1,0.5,1.5,1.6,1.5c0.6,0,1.2-0.1,1.7-0.3v1.6c-0.6,0.2-1.4,0.4-2.2,0.4C49.1,13.7,47.9,13,47.9,11z
+	 M50.3,19.5c0.9,0,1.8,0.2,2.6,0.6v1.7c-0.6-0.4-1.5-0.7-2.3-0.7c-1.5,0-3,0.8-3,2.7c0,1.9,1.4,2.7,2.9,2.7c0.9,0,1.8-0.3,2.4-0.6
+	v1.7c-0.8,0.4-1.7,0.6-2.7,0.6c-2.2,0-4.5-1.3-4.5-4.3S48.1,19.5,50.3,19.5z M42.1,27.2c-0.8,0.7-1.8,1.1-3.1,1.1
+	c-1.5,0-2.9-0.8-2.9-2.5c0-2.1,2-2.8,3.7-2.8c0.7,0,1.5,0.1,2.2,0.2v-0.3c0-1-0.8-1.8-2.2-1.8c-1.2,0-2.2,0.3-3,0.6V20
+	c0.7-0.2,1.8-0.6,3.2-0.6c2.3,0,3.8,1.1,3.8,3.6v3c0,0.5,0.3,0.6,0.6,0.6c0.2,0,0.4-0.1,0.6-0.1V28c-0.3,0.1-0.8,0.2-1.2,0.2
+	C43,28.2,42.4,27.9,42.1,27.2z M42,24.5c-0.5-0.1-1.2-0.2-1.8-0.2c-1.1,0-2.2,0.3-2.2,1.4c0,0.8,0.7,1.2,1.6,1.2
+	c0.9,0,1.7-0.3,2.4-1V24.5z M42.8,8.6c0-1.3-0.8-2-1.9-2c-1.1,0-1.8,0.7-2.3,1.4v5.5h-1.8V1.4h1.8v4.7C39.2,5.5,40.1,5,41.2,5
+	c2.1,0,3.4,1.4,3.4,3.4v5.1h-1.8C42.8,13.5,42.8,8.6,42.8,8.6z M0,28.1V1.5L14.5,0h0.2L29,1.5V28l-14.5,8.6L0,28.1z M27.1,3.2
+	L14.5,1.9L1.9,3.2v10l12.5-7.5l0,0l0,0l0,0l0,0l12.7,7.5C27.1,13.2,27.1,3.2,27.1,3.2z M14.4,18.2l3.2,1.9l0,0l1-0.7l-4.2-2.5v-1.3
+	l5.3,3.2l0.9-0.5l0.1-0.1h0.1l-6.5-3.9V13l7.6,4.5l1.6-0.9l3.4-2L14.4,7.1l0,0L1.9,14.6L14.4,22l2.1-1.3l-2.1-1.2V18.2z M27.1,15.9
+	l-3.9,2.3v3.3V22v0.4l0,0v1.3l-8.7,5.2l-8.6-5.2v-1.3l8.6,5.1v-1.4l-8.6-5.2v-1.3l8.6,5.1v-1.4L1.9,16.1V27l12.6,7.5L27.1,27V15.9z"
+	/>
+      </symbol>
+    </svg>
+
+    <header class="page-header">
+      <a href="#" class="page-header__logo  logo">
+        <svg width="154" height="64"><use xlink:href="#header-logo"></use></svg>
+      </a>
+      <button type="button" class="page-header__btn  page-header__btn--open  page-header__btn--no-js">
+        <span class="visually-hidden">Открыть меню<!--Закрыть меню--></span>
+      </button>
+      <nav class="page-header__nav  main-nav">
+        <ul class="main-nav__list  site-list">
+          <li class="main-nav__item  site-list__item  site-list__item--dropdown  dropdown">
+            <a href="https://webaim.org/" class="main-nav__link  site-list__link site-list__link--active  site-list__link--dropdown  dropdown__header  dropdown__focusable">
+              <span class="underlined  underlined--current">Каталог</span>
+            </a>
+            <div class="dropdown__box  site-list__dropdown-wrap">
+              <button type="button" class="dropdown__close-btn  dropdown__close-btn--none  site-list__dropdown-btn">
+                Закрыть меню каталога
+              </button>
+              <ul class="site-list__dropdown  dropdown__child">
+                <li class="site-list__dropdown-item  dropdown__item">
+                  <a href="catalogue.html" class="site-list__dropdown-link  site-list__dropdown-link--top  dropdown__focusable">Новинки</a>
+                </li>
+                <li class="site-list__dropdown-item  dropdown__item">
+                  <a href="#" class="site-list__dropdown-link  dropdown__focusable"><span class="underlined  underlined--current">Сливочное</span></a>
+                </li>
+                <li class="site-list__dropdown-item  dropdown__item">
+                  <a href="catalogue.html" class="site-list__dropdown-link  site-list__dropdown-link--active  dropdown__focusable">Щербеты</a>
+                </li>
+                <li class="site-list__dropdown-item  dropdown__item">
+                  <a href="catalogue.html" class="site-list__dropdown-link  dropdown__focusable">Фруктовый</a>
+                </li>
+                <li class="site-list__dropdown-item  dropdown__item">
+                  <a href="catalogue.html" class="site-list__dropdown-link  site-list__dropdown-link--bottom  dropdown__focusable">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav__item  site-list__item">
+            <a href="#" class="main-nav__link  site-list__link">
+              <span class="underlined">Доставка и оплата</span>
+            </a>
+          </li>
+          <li class="main-nav__item  site-list__item">
+            <a href="#" class="main-nav__link  site-list__link">
+              <span class="underlined">О Компании</span>
+            </a>
+          </li>
+        </ul>
+    
+        <ul class="main-nav__list  user-list">
+          <li class="main-nav__item  user-list__item  user-list__item--search  search  popup">
+            <button type="button" class="main-nav__link user-list__link  user-list__link--search  search__btn  popup__header  popup__focusable">
+              Поиск
+            </button>
+            <div class="user-list__popup  user-list__popup--search  search__wrap  popup__box  popup__box--no-js">
+              <button type="button" class="popup__close-btn  popup__close-btn--search  popup__close-btn--none  user-list__popup-btn  user-list__popup-btn--search"><!--  popup__close-btn--none -->
+                Закрыть модальное окно
+              </button>
+              <form action="https://echo.htmlacademy.ru"  class="search__form  popup__child" method="get" autocomplete="off">
+                <div class="search__form-wrap">
+                  <button type="submit" class="search__submit"></button>
+                  <p class="search__input-wrap">
+                    <input class="search__input" type="text" id="search-input" name="search-input" placeholder="Что ищем?">
+                  </p>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="main-nav__item  user-list__item  user-list__item--login  login  popup">
+            <a href="https://webaim.org/techniques/forms/controls" class="main-nav__link user-list__link  user-list__link--login  login__link  popup__header  popup__focusable">
+              <svg class="user-list__icon  user-list__icon--login" width="21" height="19">
+                <use xlink:href="#icon-login"></use>
+              </svg>
+              <span class="user-list__link-text">Вход</span>
+            </a>
+            <div class="user-list__popup  user-list__popup--login  login__wrap  popup__box">
+              <button type="button" class="popup__close-btn  user-list__popup-btn  popup__close-btn--none">
+                Закрыть модальное окно
+              </button>
+              <form action="https://echo.htmlacademy.ru"  class="login__form  popup__child" method="post" autocomplete="off">
+                <p class="login__input-wrap">
+                  <input class="login__input  login__input--email" type="text" id="login-email" name="login-email" placeholder="Электронная почта" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{1,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required>
+                </p>
+                <p class="login__input-wrap">
+                  <input class="login__input" type="text" id="login-password" name="login-password" placeholder="Пароль" required>
+                </p>
+                <div class="login__footer">
+                  <p class="login__footer-btn">
+                    <button class="login__submit btn" type="submit">Войти</button>
+                  </p>
+                  <p class="login__footer-links">
+                    <a href="#" class="login__footer-link  link-on-light">Забыли пароль?</a>
+                    <a href="#" class="login__footer-link  link-on-light">Новая регистрация</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+            <!--<div class="login__overlay">
+            </div>-->
+          </li>
+          <li class="main-nav__item  user-list__item  user-list__item--cart  cart  popup">
+            <a href="https://webaim.org/techniques/forms/controls" class="main-nav__link user-list__link  user-list__link--cart  user-list__link--full-cart  cart__link  popup__header  popup__focusable">
+              <svg class="user-list__icon  user-list__icon--cart  user-list__icon--outcart" width="21" height="20">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              <svg class="user-list__icon  user-list__icon--cart   user-list__icon--incart" width="21" height="20">
+                <use xlink:href="#icon-cart-inside"></use>
+              </svg>
+              <span class="user-list__link-text">
+                <span  class="user-list__cart-num">2</span> 
+                <span class="user-list__cart-text">товара</span>
+              </span><!--Пусто-->
+            </a>
+    
+            <div class="user-list__popup  user-list__popup--cart  cart__wrap  popup__box">
+              <button type="button" class="popup__close-btn  popup__close-btn--none  user-list__popup-btn">
+                Закрыть модальное окно
+              </button>
+              <form action="https://echo.htmlacademy.ru"  class="user-list__form  cart__form  popup__child" method="post" autocomplete="off">
+                <ul class="cart__list">
+                  <li class="cart__list-line">
+                    <div class="cart__btn-wrap">
+                      <button class="cart__btn" type="button">Удалить</button>
+                    </div>
+                    <div class="cart__img-wrap">
+                      <img class="cart__img" src="img/yellow-cart.jpg" width="33" height="33">
+                    </div>
+                    <div class="cart__title"><!--get from added item: array of added items-->
+                      Пломбир с апельсиновым джемом
+                    </div>
+                    <div class="cart__calculation">
+                      <span class="cart__amount">150</span><!--get from added 
+                      item: array of added items-->
+                      <span class="cart__unit">кг</span>
+                      <span class="cart__multiply">x</span>
+                      <span class="cart__price">300</span><!--get from added item: array of added items-->
+                      <span class="cart__currency">руб.</span>
+                    </div>
+                    <div class="cart__result">
+                      <span class="cart__sum">45 000</span>
+                      <span class="cart__currency">руб.</span>
+                    </div>
+                  </li>
+                  <li class="cart__list-line">
+                    <div class="cart__btn-wrap">
+                      <button class="cart__btn" type="button">Удалить</button>
+                    </div>
+                    <div class="cart__img-wrap">
+                      <img class="cart__img" src="img/pink-cart.jpg" width="33" height="33">
+                    </div>
+                    <div class="cart__title">
+                      Клубничный пломбир с присыпкой из белого шоколада
+                    </div>
+                    <div class="cart__calculation">
+                      <span class="cart__amount">1,5</span><!--get from added item: array of added items-->
+                      <span class="cart__unit"> кг</span>
+                      <span class="cart__multiply">x</span>
+                      <span class="cart__price">450</span><!--get from added item: array of added items-->
+                      <span class="cart__currency">руб.</span>
+                    </div>
+                    <div class="cart__result">
+                      <span class="cart__sum">675</span>
+                      <span class="cart__currency">руб.</span>
+                    </div>
+                  </li>
+                  <li class="cart__list-line">
+                    <div class="cart__btn-wrap">
+                      <button class="cart__btn" type="button">Удалить</button>
+                    </div>
+                    <div class="cart__img-wrap">
+                      <img class="cart__img" src="img/pink-cart.jpg" width="33" height="33">
+                    </div>
+                    <div class="cart__title">
+                      Клубничный пломбир с присыпкой из белого шоколада
+                    </div>
+                    <div class="cart__calculation">
+                      <span class="cart__amount">1,5</span><!--get from added item: array of added items-->
+                      <span class="cart__unit"> кг</span>
+                      <span class="cart__multiply">x</span>
+                      <span class="cart__price">450</span><!--get from added item: array of added items-->
+                      <span class="cart__currency">руб.</span>
+                    </div>
+                    <div class="cart__result">
+                      <span class="cart__sum">675</span>
+                      <span class="cart__currency">руб.</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="cart__total">
+                  <span>Итого: </span>
+                  <span class="cart__total-num"></span>
+                  <span class="cart__currency"> руб.</span>
+                </div>
+                <button class="btn cart__submit" type="submit">Оформить заказ</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    <div class="page-header__footer">
+      <ul class="page-header__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link link-on-dark underlined underlined--on-dark" href="main.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link link-on-dark underlined underlined--on-dark" href="catalogue.html">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link link-on-dark--current" href="">Сливочное мороженое</a></li>
+      </ul>
+    
+      <p class="page-header__contacts  contacts">
+        <div>С 10 до 20, ежедневно</div>
+        <a class="page-header__phone" href="tel:+78124502525">8 812 450-25-25</a>
+      </p>
+    </div>
+    </header>
+
+    <section class="catalogue-filters">
+      <h1 class="catalogue-filters__header"><span class="catalogue-filters__title--type">Сливочное</span> мороженое</h1>
+      <form class="catalogue-filters__form" action="#" method="get" autocomplete="off">
+        <!--action="https://js.dump.academy/keksobooking"-->
+        <fieldset class="catalogue-filters__box  catalogue-filters__box--select">
+          <label class="catalogue-filters__title" for="sorting">
+            Сортировка:
+          </label>
+          <div class="filter-select-wrap">
+            <select class="catalogue-filters__filter catalogue-filters__select filter-select" id="sorting" name="sorting">
+              <option value="popular">по популярности</option>
+              <option value="price">по цене</option>
+              <option value="fat">по жирности</option>
+              <option value="sugar-content">по содержанию сахару</option>
+            </select>
+          </div>
+        </fieldset>
+    
+        <fieldset class="catalogue-filters__box catalogue-filters__box--slider">
+          <label class="catalogue-filters__title" for="price-slider">
+            Цена: <span id="price-min"></span>100</span> руб. - <span id="price-max"></span>500</span> руб.
+          </label>
+          <!--<input class="catalogue-filters__filter filter-slider" id="price-slider" type="range" min="0" max="600">-->
+          <!--<div class="slider-box"><!--catalogue-filters__filter -->
+            <!--
+            <input type="range" min="0" max="600" value="100" class="slider" id="myRangeMin">
+            <input type="range" min="0" max="600" value="500" class="slider--absolute" id="myRangeMax">
+          </div>-->
+          <div class="wrap" role="group" aria-labelledby='multi-lbl'>
+            <!--
+            <input type="range" min="1" max="100" value="50">
+            <p>Custom range slider:</p>
+            -->
+            <div id='multi-lbl'>Multi thumb slider:</div>
+            <label class='sr-only visually-hidden' for='a'>Value A:</label>
+            <input type="range" min="-50" max="50" value="-30" id="a">
+            <label class='sr-only visually-hidden' for='b'>Value B:</label>
+            <input type="range" min="-50" max="50" value="20" id="b">
+          </div>
+        </fieldset>
+    
+        <fieldset class="catalogue-filters__box catalogue-filters__box--radio">
+          <legend class="catalogue-filters__legend">
+            Жирность:
+          </legend>
+          
+          <div class="catalogue-filters__filter catalogue-filters__radio filter-radio">
+            <input class="catalogue-filters__radio visually-hidden" id="fat-0" type="radio" name="fat-content">
+            <label class="catalogue-filters__radio-label" for="fat-0">0%</label>
+    
+            <input class="catalogue-filters__radio visually-hidden" id="fat-10" type="radio" name="fat-content">
+            <label class="catalogue-filters__radio-label" for="fat-10">до 10%</label>
+    
+            <input class="catalogue-filters__radio visually-hidden" id="fat-30" type="radio" name="fat-content">
+            <label class="catalogue-filters__radio-label" for="fat-30">до 30%</label>
+    
+            <input class="catalogue-filters__radio visually-hidden" id="fat-over-30" type="radio" name="fat-content">
+            <label class="catalogue-filters__radio-label" for="fat-over-30">выше 30%</label>
+          </div>
+        </fieldset>
+    
+        <fieldset class="catalogue-filters__box catalogue-filters__box--checkbox">
+          <legend class="catalogue-filters__legend">
+            Наполнители:
+          </legend>
+          
+          <div class="catalogue-filters__filter catalogue-filters__checkbox">
+            <input class="catalogue-filters__checkbox visually-hidden" id="chocolate" type="checkbox" name="chocolate">
+            <label class="catalogue-filters__checkbox-label" for="chocolate">шоколадные</label>
+    
+            <input class="catalogue-filters__checkbox visually-hidden" id="sugar-topping" type="checkbox" name="sugar-topping">
+            <label class="catalogue-filters__checkbox-label" for="sugar-topping">сахарные присыпки</label>
+    
+            <input class="catalogue-filters__checkbox visually-hidden" id="fruit" type="checkbox" name="fruit">
+            <label class="catalogue-filters__checkbox-label" for="fruit">фрукты</label>
+    
+            <input class="catalogue-filters__checkbox visually-hidden" id="syrup" type="checkbox" name="syrup">
+            <label class="catalogue-filters__checkbox-label" for="syrup">сиропы</label>
+    
+            <input class="catalogue-filters__checkbox visually-hidden" id="jam" type="checkbox" name="jam">
+            <label class="catalogue-filters__checkbox-label" for="jam">джемы</label>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer class="page-footer">
+      <section class="page-footer__wrap  page-footer__wrap--social">
+        <ul class="page-footer__social  social">
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--twitter" aria-label="Twitter">
+              Twitter
+              <svg class="social__icon" width="32px" height="32px"><use xlink:href="#social-twitter"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--ig">
+              Instagram
+              <svg class="social__icon" width="32px" height="32px"><use xlink:href="#social-ig"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--fb">
+              Facebook
+              <svg class="social__icon" width="32px" height="32px"><use xlink:href="#social-fb"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--vk">
+              Vkontakte
+              <svg class="social__icon" width="32px" height="32px"><use xlink:href="#social-B"></use></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    
+      <section class="page-footer__wrap  page-footer__wrap--documentation">
+        <ul class="page-footer__documentation  documentation">
+          <li class="documentation__item  documentation__item--heart">
+            <a href="#" class="page-footer__link  documentation__link  link-on-dark">Для поставщиков</a>
+          </li>
+          <li class="documentation__item">
+            <a href="#" class="page-footer__link documentation__link  link-on-dark">Наши документы</a>
+          </li>
+          <li class="documentation__item">
+            <a href="#" class="page-footer__link  documentation__link  link-on-dark">О производстве</a>
+          </li>
+          <li class="documentation__item">
+            <a href="#" class="page-footer__link  documentation__link  link-on-dark">Экологические стандарты</a>
+          </li>
+        </ul>
+      </section>
+    
+      <section class="page-footer__wrap  page-footer__wrap--copyright">
+        <div class="copyright">
+          <a href="https://www.catster.com/lifestyle/cat-health-vet-study-fiv-positive-cats-living-together?fbclid=IwAR1e07jiswATAIvnfdDwGyvX6tpUIcBp_DqA54x13n5PpbXrUZErBQNM4V8" class="copyright__logo"  aria-label="HTMLAcademy">
+            HTMLAcademy
+            <svg class="copyright__icon" width="109px" height="39px"><use xlink:href="#htmla-logo"></use></svg>
+          </a>
+          <p class="copyright__text">Сделано в <a href="#" class="page-footer__link  copyright__link   link-on-dark">HTML Academy</a> © <span class="year"></span></p>
+        </div>
+      </section>
+    </footer>
+    <!--<script  async defer 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN2MfWVwQVRMMn6whXa2D8FZsTt8s5hKc&v=3&callback=window.initThisMap">
+    </script>-->
+    
+    <!--async defer-->
+    
+    <script src="js/libraries/swiper.js"></script>
+    <script defer src="js/script.min.js"></script>
+    
+    <!--<script defer src="js/script.js"></script>-->
+  </body>
+
+</html>
